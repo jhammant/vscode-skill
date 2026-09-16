@@ -60,12 +60,12 @@ this skill needs.
 flowchart LR
   T[session log] --> P[collect writes]
   S[subagent logs] --> P
-  B["Bash commands<br/>&gt; · tee · sed -i · cp · mv"] --> P
-  P --> F["select<br/>still exists · not scratch · newest 8"]
-  A["/vscode arguments<br/>last · all · name · glob"] --> F
+  B[shell commands<br/>redirect · tee · sed -i · cp · mv] --> P
+  P --> F[select<br/>still exists · not scratch · newest 8]
+  A[skill arguments<br/>last · all · name · glob] --> F
   F --> G[group by git root]
-  G -->|open| O["code &lt;root&gt; --goto file:line …"]
-  G -->|diff| D["code --diff before file"]
+  G -->|open| O[code root, goto file:line]
+  G -->|diff| D[code diff, before vs now]
 ```
 
 - **Which files:** successful `Write`, `Edit` and `NotebookEdit` results, from Claude and from
