@@ -1,3 +1,8 @@
+> **Moved.** `/vscode` now lives in [jhammant/claude-skills](https://github.com/jhammant/claude-skills/tree/main/plugins/desk),
+> in the `desk` plugin with `/finder` and `/open`. Install it with
+> `/plugin marketplace add jhammant/claude-skills` then `/plugin install desk@claude-skills`.
+> This repo is archived; the README below is kept for reference.
+
 # vscode
 
 Open the files Claude Code just changed in VS Code, with one command.
